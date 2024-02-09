@@ -33,7 +33,7 @@ if st.button("Create song"):
             )
 
             # Generate the audio
-            audio_values = model.generate(**inputs, max_new_tokens=256)
+            audio_values = model.generate(**inputs, max_new_tokens=64)
 
             sampling_rate = model.config.audio_encoder.sampling_rate
             # Save the wav file into your system
